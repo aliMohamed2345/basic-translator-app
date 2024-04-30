@@ -4,6 +4,8 @@ that project uses api to handle the word and translate it to one of these langua
 
 api is 
 `https://api.mymemory.translated.net/get?q=${textToTranslte}&langpair=${translateFrom}|${translateTo}`
-this project have made using html ,css ,js,scss,bootstrap 
+
+
+this project was made using html ,css ,js,scss,bootstrap 
 project live demo
 https://calculator-app-nine-kappa.vercel.app/
