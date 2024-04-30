@@ -8,4 +8,4 @@ api is
 
 this project was made using html ,css ,js,scss,bootstrap 
 project live demo
-https://calculator-app-nine-kappa.vercel.app/
+https://simple-translator-website.vercel.app/
