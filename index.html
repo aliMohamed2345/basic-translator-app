@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="/bootstrap.css">
+<link rel="stylesheet" href="/style.scss">
+<link rel="stylesheet" href="/style.css.map">
+<link rel="stylesheet" href="/style.css">
+    <!-- font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Basic translator app</title>
+  </head>
+  <body class="position-relative">
+    <div class="container">
+      <div class="box bg-white">
+        <div
+          class="lang-settings d-flex align-items-center justify-content-between"
+        >
+          <div
+            class="right-section d-flex align-items-center justify-content-start gap-4"
+          >
+            <div class="icons d-flex fs-4 gap-1">
+              <i class="fa-solid fa-microphone mic" id="mic1"></i>
+              <i class="fa-regular fa-clipboard clipboard" id="clipboard1"></i>
+            </div>
+            <div
+              class="language d-flex align-items-center justify-content-between"
+              id="lang1"
+            >
+              <p class="current-lang m-0 fs-4" id="current1">Arabic</p>
+              <i class="fa-solid fa-plus" id="plus1"></i>
+              <i
+                class="fa-solid fa-minus"
+                id="minus1"
+                style="display: none"
+              ></i>
+              <div class="select-lang" id="select1" style="opacity: 0">
+                <ul class="p-0">
+                  <li class="p-1">Arabic</li>
+                  <li class="p-1">English</li>
+                  <li class="p-1">French</li>
+                  <li class="p-1">Hindu</li>
+                  <li class="p-1">Italy</li>
+                  <li class="p-1">Spanish</li>
+                  <li class="p-1">Japanese</li>
+                  <li class="p-1">Korean</li>
+                  <li class="p-1">German</li>
+                  <li class="p-1">Turkish</li>
+                  <li class="p-1">Greek</li>
+                  <li class="p-1">Hebrew</li>
+                  <li class="p-1">Latin</li>
+                  <li class="p-1">Persian</li>
+                  <li class="p-1">Russian</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="left-section d-flex align-items-center justify-content-end pe-3 gap-4"
+          >
+            <div class="icons d-flex fs-4 gap-1">
+              <i class="fa-solid fa-microphone mic" id="mic2"></i>
+              <i class="fa-regular fa-clipboard clipboard" id="clipboard2"></i>
+            </div>
+            <div
+              class="language d-flex align-items-center justify-content-between"
+              id="lang2"
+            >
+              <p class="current-lang m-0 fs-4" id="current2">English</p>
+              <i class="fa-solid fa-plus" id="plus2"></i>
+              <i
+                class="fa-solid fa-minus"
+                id="minus2"
+                style="display: none"
+              ></i>
+              <div class="select-lang" id="select2">
+                <ul class="p-0">
+                  <li class="p-1">Arabic</li>
+                  <li class="p-1">English</li>
+                  <li class="p-1">French</li>
+                  <li class="p-1">Hindu</li>
+                  <li class="p-1">Italy</li>
+                  <li class="p-1">Spanish</li>
+                  <li class="p-1">Japanese</li>
+                  <li class="p-1">Korean</li>
+                  <li class="p-1">German</li>
+                  <li class="p-1">Turkish</li>
+                  <li class="p-1">Greek</li>
+                  <li class="p-1">Hebrew</li>
+                  <li class="p-1">Latin</li>
+                  <li class="p-1">Persian</li>
+                  <li class="p-1">Russian</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="translation-area fs-3 pt-3">
+          <textarea
+            rows="8"
+            id="TextFrom"
+            class="TextFrom border-0"
+            placeholder="Enter Text..."
+          ></textarea>
+          <textarea
+            id="TextTo"
+            disabled
+            class="TextTo border-0"
+            placeholder="Translation"
+            rows="8"
+          ></textarea>
+        </div>
+        <button
+          class="translation-btn btn btn-primary d-flex mt-1 align-items-end m-auto p-2 fs-5 text-uppercase"
+          style="transition: 0.5s ease all"
+        >
+          Translate
+        </button>
+      </div>
+    </div>
+
+   <script src="script.js"></script>
+  </body>
+</html>
